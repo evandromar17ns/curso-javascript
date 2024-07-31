@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 15px;
+
+        }
+
+        body {
+            background-color: rgb(255, 188, 99);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        p > #txt{
+            display:inline;
+            width: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>
+        Velocidade do veículo :<input type="number" name="txt" id="txt" placeholder="km/h"> km/h
+        
+        <input type="button" value="Verificar" onclick="multa()">
+    </p>
+    <div id="res"></div>
+
+
+
+
+
+    <script>
+        function multa(){
+            var txtv = document.getElementById('txt')
+            var km = Number(txtv.value)
+            var res = document.getElementById('res')
+
+            res.innerHTML = `Velocidade do veículo ${km} km/h.`
+
+            if(km>80){
+                res.innerHTML = `<p>Você ultrapassou o limite de velocidade da via . "MULTADO"</p>`
+
+            }
+            res.innerHTML += `<p>Dirija sempre com atenção e use o cinto de segurança.</p>`
+
+
+
+
+
+        }
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

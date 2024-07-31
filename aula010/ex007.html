@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+
+    <input type="number" name="caix1" id="caix1" placeholder="digite aqui"> +
+    <input type="number" name="caix2" id="caix2" placeholder="digite aqui">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"></div>
+
+    <script>
+        function somar() {
+
+            var caitx1 = window.document.getElementById('caix1')
+            var caitx2 = window.document.getElementById('caix2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(caitx1.value)
+            var n2 = Number(caitx2.value)
+            var s = n1 + n2
+
+            res.innerText = ` A soma de ${n1} + ${n2} é igual a ${s}`
+
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

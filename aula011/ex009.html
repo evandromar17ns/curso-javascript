@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Nacionalidade</h1>
+    De onde você é ?
+    <input type="text" name="caix" id="caix" placeholder="digite aqui ...">
+    <input type="button" value="Verificar" onclick="naci()">
+    <div id="res"></div>
+
+
+
+
+    <script>
+        function naci() {
+
+            var caixa = document.getElementById('caix')
+            var s = document.getElementById('res')
+            var pais = caixa.value
+
+            s.innerHTML += `<p>Morando em ${pais}.</p>`
+
+            if (pais == 'brasil' || pais == 'Brasil') {
+                s.innerHTML += ` <p>Você é <strong>Brasileiro</strong> !</p>`
+            } else {
+                s.innerHTML += `<p>Você é <strong>Estrangeiro</strong> !</p>`
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

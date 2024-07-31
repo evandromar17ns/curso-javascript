@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: aquamarine;
+            color:rgb(57, 96, 99) ;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <script> 
+      
+        
+        var nome = window.prompt('Qual é o seu nome ?')
+        var idad = window.prompt('Qual é a sua idade ?')
+        var profissão= window.prompt('Qual é a sua profissão')
+        document.write(`Olá ${nome} !<br>`)
+        document.write(`Vi aqui que sua profissão é ${profissão},<br>`)
+        document.write(`Vi aqui também que sua idade é ${idad} anos , <br>` )
+        document.write(`O nome ${nome}  tem ${nome.length} letras ,<br>`)
+        document.write(`<strong>${nome}</strong> em maiúsculo fica <strong>${nome.toUpperCase()}</strong> , <br>`)
+        document.write(`E em minúsculo fica <strong>${nome.toLowerCase()}</strong> ! <br> <br>`)
+        document.write(`Vi aqui que  ${nome} , que você se tornou  ${profissão} com apenas  ${idad}  anos de idade, muito bem !  ` )
+    </script>
+    
+</body> 
+</html>
